@@ -2,11 +2,11 @@ const buttonString = 'Button';
 const duration = 3000;
 let buttonCount;
 
-const setAttributes = (el, attrs) => {
+const setAttributes = (btnElement, attrs) => {
   Object.entries(attrs)
     .forEach(args =>
-      el.setAttribute(...args));
-  el.onclick = tempAlert;
+      btnElement.setAttribute(...args));
+      btnElement.onclick = tempAlert;
 }
 
 buttonUIExecute = (btnNumber) => {
@@ -23,11 +23,11 @@ buttonUIExecute = (btnNumber) => {
 }
 
 tempAlert = (event) => {
-  const el = document.createElement("div");
-  el.setAttribute('class', 'popup');
-  el.innerHTML = typeof event === 'object' ? `Button name: ${event.srcElement.value} Index: ${event.srcElement.id}` : event;
+  const divElement = document.createElement("div");
+  divElement.setAttribute('class', 'popup');
+  divElement.innerHTML = typeof event === 'object' ? `Button name: ${event.srcElement.value} Index: ${event.srcElement.id}` : event;
   setTimeout(() => {
-    el.parentNode.removeChild(el);
+    divElement.parentNode.removeChild(divElement);
   }, duration);
-  document.body.appendChild(el);
+  document.body.appendChild(divElement);
 }
