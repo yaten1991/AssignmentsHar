@@ -21,17 +21,21 @@ div button.getStarted,
 div.getStarted {
 	margin: 15px auto;
 	clear: both;
+	border: none;
 }
 
 .email input,
 .password input {
 	width: 375px;
 	padding: 3px 0px 4px 3px;
+	color: #FFFFFF;
+
 }
 
 .firstName input,
 .lastName input {
 	text-transform: capitalize;
+	color: #FFFFFF;
 }
 
 button {
@@ -39,7 +43,7 @@ button {
 }
 button.logIn {
 	background-color: rgb(67, 82, 89);
-	color: #fff;
+	color: gray;
 	float: right;
 	margin-left: -4px
 }
@@ -68,13 +72,16 @@ button.getStarted:active,
 .topButtons {
 	margin: 0 auto;
 	padding: 10px;
+	
 }
 
 .topButtons button {
 	width: 190px;
 	height: 40px;
 	font-size: 14px;
+	font-weight: normal;
 	margin: 0 auto;
+	border: none;
 }
 
 
@@ -85,8 +92,8 @@ button.getStarted:active,
 
 label,
 ::placeholder {
-	color: rgb(83, 96, 105);
 	font-size: 12px;
+	color: #b8b4b4;
 }
 
 .mainDiv {
@@ -101,6 +108,7 @@ h3 {
 	color: #fff;
 	margin-bottom: 0;
 	margin-top: 15px;
+	font-weight: unset;
 }
 
 .name .firstName {
@@ -139,6 +147,9 @@ h3 {
 .input-field {
 	width: 100%;
 	padding: 10px;
+	background: #24323c;
+	border-color: gray;
+	box-shadow: gray;
 }
 input:required:focus
  {
@@ -151,6 +162,7 @@ input:required:focus
 	left: 75%;
 	width: 5px;
 	height: 5px;
+	color: #FFFFFF;
 	top: -32%;
 }
 
@@ -159,6 +171,7 @@ input:required:focus
 	left: 87.5%;
 	width: 5px;
 	height: 5px;
+	color: #FFFFFF;
 	top: -28.5%;
 }
 
@@ -317,25 +330,22 @@ border-radius: 3px;
 color: #FFFFFF;
 font-size: 1.6em;
 width: 160px;
-margin: 0 0 0 20px;
+margin: 4px 0 0 20px;
 padding: 10px 10px 10px 10px;
 }
 
 button {
 background-color: #f8f8f8;
-border-style: solid;
 border-width: 1px;
 border-color: #eaeaea;
-border-radius: 3px;
 color: #777;
 font-weight: bold;
 font-size: .7em;
-box-shadow:0 1px 1px #eaeaea;
 }
 
 #infoheader{
 	font-weight:bold;
-	/* font-size: 1.3em; */
+	font-size: 1.3em;
 }
 #imp-info{
 	color:#EF5F3C;
@@ -355,11 +365,11 @@ font-size: 1.3em;
 .footer-button-1{
 	margin: 0 10px 0 0;
 	width: 49%;
-	height: 30px;
+	height: 45px;
 }
-.footer-button {
+.footer-button {	
 width: 49%;
-height: 30px;
+height: 45px;
 
 }
 
