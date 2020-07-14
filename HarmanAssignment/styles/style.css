@@ -142,7 +142,9 @@ h3 {
 	min-width: 50px;
 	text-align: center;
 }
-
+.headingSpace{
+	margin: 0 0 25px 0;
+}
 
 .input-field {
 	width: 100%;
