@@ -2,13 +2,13 @@
 
 setTimeout(() => {
   unitTest();
-}, duration);
+}, 2000);
 
 async function unitTest() {
-  let btnElements = [...document.getElementsByClassName('btnClass')];
-  if (btnElements.length === buttonCount) {
-    console.log(`Test case PASS, All ${buttonCount} buttons are available on UI.`);
+  let btnElements = document.getElementsByClassName('btnClass');
+  if (btnElements.length === 5) {
+    console.log(`Test case PASS`);
   } else {
-    console.log(`Test case FAIL, All ${buttonCount} buttons are not available on UI.`);
+    console.log(`Test case FAIL`);
   }
 }
